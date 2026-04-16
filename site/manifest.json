@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Master Excel Expert Certification (MO-201)",
+    "slug": "index",
+    "file": "index.html",
+    "domain": "Home",
+    "objectiveId": "SITE-HOME",
+    "estimatedMinutes": 10,
+    "difficulty": "Beginner",
+    "topics": ["certification overview", "learning path", "domain roadmap"],
+    "resourceLinks": [
+      "https://learn.microsoft.com/credentials/certifications/resources/study-guides/mo-201",
+      "https://support.microsoft.com/excel"
+    ],
+    "practiceTasks": [
+      "Choose your first certification domain",
+      "Mark one domain card complete",
+      "Open the PivotTables example lesson"
+    ],
+    "downloadWorkbook": "assets/workbooks/sample-sales-data.csv"
+  },
+  {
+    "title": "Domain 1 | Manage Workbooks",
+    "slug": "domain-1-manage-workbooks",
+    "file": "domain-1-manage-workbooks.html",
+    "domain": "Domain 1",
+    "objectiveId": "MO-201-1.x",
+    "estimatedMinutes": 35,
+    "difficulty": "Intermediate",
+    "topics": ["macros", "external references", "version history", "protection"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://learn.microsoft.com/credentials/certifications/resources/study-guides/mo-201"
+    ],
+    "practiceTasks": [
+      "Compare .xlsx and .xlsm file types",
+      "Trace an external workbook reference",
+      "Protect workbook structure and explain the difference from sheet protection"
+    ],
+    "downloadWorkbook": "assets/workbooks/manage-workbooks-practice.xlsx"
+  },
+  {
+    "title": "Domain 2 | Manage Data Cells",
+    "slug": "domain-2-manage-data-cells",
+    "file": "domain-2-manage-data-cells.html",
+    "domain": "Domain 2",
+    "objectiveId": "MO-201-2.x",
+    "estimatedMinutes": 40,
+    "difficulty": "Intermediate",
+    "topics": ["Flash Fill", "Fill Series", "data validation", "number formats"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://edu.gcfglobal.org/en/excel2016/"
+    ],
+    "practiceTasks": [
+      "Use Flash Fill to generate IDs",
+      "Apply a dropdown validation list",
+      "Format negative values and hide zeros with a custom number format"
+    ],
+    "downloadWorkbook": "assets/workbooks/manage-data-practice.xlsx"
+  },
+  {
+    "title": "Domain 3 | Manage Tables and Queries",
+    "slug": "domain-3-manage-tables-queries",
+    "file": "domain-3-manage-tables-queries.html",
+    "domain": "Domain 3",
+    "objectiveId": "MO-201-3.x",
+    "estimatedMinutes": 45,
+    "difficulty": "Intermediate",
+    "topics": ["tables", "structured references", "Power Query", "PivotTables"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://www.contextures.com/xlPivot01.html"
+    ],
+    "practiceTasks": [
+      "Convert a range into a named Excel Table",
+      "Import another workbook with Get Data",
+      "Refresh a summary after adding source rows"
+    ],
+    "downloadWorkbook": "assets/workbooks/manage-tables-practice.xlsx"
+  },
+  {
+    "title": "Domain 4 | Manage Charts",
+    "slug": "domain-4-manage-charts",
+    "file": "domain-4-manage-charts.html",
+    "domain": "Domain 4",
+    "objectiveId": "MO-201-4.x",
+    "estimatedMinutes": 35,
+    "difficulty": "Intermediate",
+    "topics": ["combo charts", "trendlines", "dual-axis charts", "visual design"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://edu.gcfglobal.org/en/excel2016/"
+    ],
+    "practiceTasks": [
+      "Choose the right chart for a reporting question",
+      "Build a combo chart with a secondary axis",
+      "Rewrite a chart title as a takeaway statement"
+    ],
+    "downloadWorkbook": "assets/workbooks/manage-charts-practice.xlsx"
+  },
+  {
+    "title": "Domain 5 | Manage Advanced Formulas",
+    "slug": "domain-5-manage-formulas",
+    "file": "domain-5-manage-formulas.html",
+    "domain": "Domain 5",
+    "objectiveId": "MO-201-5.x",
+    "estimatedMinutes": 50,
+    "difficulty": "Advanced",
+    "topics": ["XLOOKUP", "dynamic arrays", "named ranges", "formula auditing"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://learn.microsoft.com/credentials/certifications/resources/study-guides/mo-201"
+    ],
+    "practiceTasks": [
+      "Replace a legacy lookup with XLOOKUP",
+      "Create a spilling unique list",
+      "Use a named range inside a reusable formula"
+    ],
+    "downloadWorkbook": "assets/workbooks/manage-formulas-practice.xlsx"
+  },
+  {
+    "title": "PivotTables Mastery | Excel Expert Certification",
+    "slug": "lesson-pivot-tables",
+    "file": "lesson-pivot-tables.html",
+    "domain": "Domain 3 - Manage Tables & Queries",
+    "objectiveId": "MO-201-3.1",
+    "estimatedMinutes": 45,
+    "difficulty": "Intermediate",
+    "topics": ["PivotTables", "filters", "formatting", "refresh"],
+    "resourceLinks": [
+      "https://support.microsoft.com/excel",
+      "https://www.contextures.com/xlPivot01.html"
+    ],
+    "practiceTasks": [
+      "Insert a PivotTable in a new worksheet",
+      "Summarize Revenue by Region and Category",
+      "Refresh the PivotTable after adding source rows"
+    ],
+    "downloadWorkbook": "assets/workbooks/pivot-tables-practice.xlsx"
+  }
+]

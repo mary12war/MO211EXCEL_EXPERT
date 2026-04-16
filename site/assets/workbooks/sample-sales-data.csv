@@ -1,0 +1,9 @@
+OrderID,Region,Category,Product,Revenue,Year
+1001,North,Electronics,Laptop,1299.99,2024
+1002,South,Furniture,Desk,349.00,2024
+1003,North,Electronics,Monitor,599.99,2023
+1004,East,Clothing,Jacket,89.99,2024
+1005,West,Furniture,Chair,229.00,2023
+1006,South,Electronics,Tablet,449.99,2024
+1007,East,Electronics,Laptop,1299.99,2024
+1008,North,Clothing,Shoes,129.99,2023

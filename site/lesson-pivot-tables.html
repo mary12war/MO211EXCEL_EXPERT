@@ -1,0 +1,274 @@
+<!-- PLACEHOLDER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PivotTables Mastery | Excel Expert Certification</title>
+  <meta name="description" content="Learn how to build PivotTables fast for Excel Expert certification prep with a worked example, interactive quiz, and practice workbook download.">
+  <meta property="og:title" content="PivotTables Mastery | Excel Expert Certification">
+  <meta property="og:description" content="A complete Excel Expert lesson on preparing source data, inserting PivotTables, formatting values, filtering, and refreshing new data.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://yourdomain.github.io/excel-expert/lesson-pivot-tables.html">
+  <meta property="og:image" content="assets/images/domain-3-thumb-1200.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-brand-mark">XL</span>
+        <span>Excel Expert Learning Site</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="domain-3-manage-tables-queries.html">Domain 3</a>
+        <a href="#quiz-title">Quiz</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="lesson-hero">
+    <div class="page-wrap">
+      <div class="lesson-hero-panel">
+        <div class="breadcrumb">
+          <span class="badge">Domain 3 - Manage Tables &amp; Queries</span>
+          <span class="objective-chip">MO-201-3.1</span>
+        </div>
+        <h1>PivotTables Mastery</h1>
+        <p><!-- CONTENT: Replace with objective text from Learning Directory row MO-201-3.1 -->Create fast summaries from large datasets without rewriting formulas or changing source data.</p>
+        <div class="lesson-meta">
+          <span class="chip-time">45 minutes</span>
+          <span class="chip-difficulty">Intermediate</span>
+          <span class="badge">Primary resource: Microsoft Learn - Create a PivotTable</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-grid">
+    <article class="lesson-content">
+      <section class="hook" aria-labelledby="hook-title">
+        <h2 class="block-title" id="hook-title">Real-World Hook</h2>
+        <p>Your manager just emailed you a 10,000-row sales spreadsheet and needs a regional breakdown by product category by end of day - PivotTables let you build that in under 2 minutes.</p>
+      </section>
+
+      <section class="misconception" aria-labelledby="misconception-title">
+        <h2 class="block-title" id="misconception-title">Common Misconception</h2>
+        <p>⚠️ Many learners think PivotTables permanently change their data - they don't; PivotTables are a separate view that never modifies the source range.</p>
+      </section>
+
+      <section class="mastery-steps" aria-labelledby="steps-title">
+        <h2 class="block-title" id="steps-title">Mastery Steps</h2>
+        <ol>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>1. Prepare your data</strong></button>
+            <div class="step-detail is-open">
+              <p>Ensure your source range has headers in row 1, no blank rows, and no merged cells.</p>
+              <span class="step-meta">Task: Open <code>pivot-tables-practice.xlsx</code> and verify the table structure.</span>
+            </div>
+          </li>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>2. Insert a PivotTable</strong></button>
+            <div class="step-detail is-open">
+              <p>Click any cell in your data, open the Insert tab, choose PivotTable, and keep the default location of a new worksheet.</p>
+              <span class="step-meta">Task: Insert a PivotTable from the Sales table.</span>
+            </div>
+          </li>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>3. Build your first summary</strong></button>
+            <div class="step-detail is-open">
+              <p>Drag <code>Region</code> to Rows, <code>Category</code> to Columns, and <code>Revenue</code> to Values so Excel sums the numeric field automatically.</p>
+              <span class="step-meta">Task: Reproduce the Regional Sales by Category summary.</span>
+            </div>
+          </li>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>4. Apply a filter</strong></button>
+            <div class="step-detail is-open">
+              <p>Move <code>Year</code> into the Filters area to create a single dropdown that controls the whole report.</p>
+              <span class="step-meta">Task: Filter to show only 2024 data.</span>
+            </div>
+          </li>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>5. Format values</strong></button>
+            <div class="step-detail is-open">
+              <p>Right-click any number inside the PivotTable and apply Currency formatting with 0 decimal places so the value field stays readable after refreshes.</p>
+              <span class="step-meta">Task: Apply currency formatting with 0 decimal places.</span>
+            </div>
+          </li>
+          <li>
+            <button class="step-toggle" type="button" aria-expanded="true"><strong>6. Refresh and troubleshoot</strong></button>
+            <div class="step-detail is-open">
+              <p>After new data is added to the source, right-click the PivotTable and choose Refresh to pull the new records into the summary.</p>
+              <span class="step-meta">Task: Add 3 new rows to source data and refresh.</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="worked-example" aria-labelledby="example-title">
+        <div class="csv-toolbar">
+          <h2 class="block-title" id="example-title">Worked Example</h2>
+          <button class="copy-btn" type="button" data-copy-target="#sales-csv-source">Copy CSV</button>
+        </div>
+        <p>Use this sample file to practice creating the same PivotTable layout before trying the larger workbook version.</p>
+        <div class="csv-preview">
+          <table>
+            <caption>Sample dataset: <code>sample-sales-data.csv</code></caption>
+            <thead>
+              <tr>
+                <th scope="col">OrderID</th>
+                <th scope="col">Region</th>
+                <th scope="col">Category</th>
+                <th scope="col">Product</th>
+                <th scope="col">Revenue</th>
+                <th scope="col">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1001</td><td>North</td><td>Electronics</td><td>Laptop</td><td>1299.99</td><td>2024</td></tr>
+              <tr><td>1002</td><td>South</td><td>Furniture</td><td>Desk</td><td>349.00</td><td>2024</td></tr>
+              <tr><td>1003</td><td>North</td><td>Electronics</td><td>Monitor</td><td>599.99</td><td>2023</td></tr>
+              <tr><td>1004</td><td>East</td><td>Clothing</td><td>Jacket</td><td>89.99</td><td>2024</td></tr>
+              <tr><td>1005</td><td>West</td><td>Furniture</td><td>Chair</td><td>229.00</td><td>2023</td></tr>
+              <tr><td>1006</td><td>South</td><td>Electronics</td><td>Tablet</td><td>449.99</td><td>2024</td></tr>
+              <tr><td>1007</td><td>East</td><td>Electronics</td><td>Laptop</td><td>1299.99</td><td>2024</td></tr>
+              <tr><td>1008</td><td>North</td><td>Clothing</td><td>Shoes</td><td>129.99</td><td>2023</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Expected PivotTable output after placing <code>Region</code> in Rows, <code>Category</code> in Columns, and <code>Revenue</code> in Values:</p>
+        <div class="csv-preview">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Region</th>
+                <th scope="col">Electronics</th>
+                <th scope="col">Furniture</th>
+                <th scope="col">Clothing</th>
+                <th scope="col">Grand Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">East</th><td>1,299.99</td><td>-</td><td>89.99</td><td>1,389.98</td></tr>
+              <tr><th scope="row">North</th><td>1,899.98</td><td>-</td><td>129.99</td><td>2,029.97</td></tr>
+              <tr><th scope="row">South</th><td>449.99</td><td>349.00</td><td>-</td><td>798.99</td></tr>
+              <tr><th scope="row">West</th><td>-</td><td>229.00</td><td>-</td><td>229.00</td></tr>
+              <tr><th scope="row"><strong>Total</strong></th><td><strong>3,649.96</strong></td><td><strong>578.00</strong></td><td><strong>219.98</strong></td><td><strong>4,447.94</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <textarea id="sales-csv-source" class="sr-only" aria-hidden="true">OrderID,Region,Category,Product,Revenue,Year
+1001,North,Electronics,Laptop,1299.99,2024
+1002,South,Furniture,Desk,349.00,2024
+1003,North,Electronics,Monitor,599.99,2023
+1004,East,Clothing,Jacket,89.99,2024
+1005,West,Furniture,Chair,229.00,2023
+1006,South,Electronics,Tablet,449.99,2024
+1007,East,Electronics,Laptop,1299.99,2024
+1008,North,Clothing,Shoes,129.99,2023</textarea>
+      </section>
+
+      <section class="teacher-tip" aria-labelledby="tip-title">
+        <h2 class="block-title" id="tip-title">Teacher Tip</h2>
+        <p>💡 <strong>Memory shortcut:</strong> Think of PivotTable field zones as a newspaper: Rows = who/what (left column), Columns = time/categories (header row), Values = the numbers in the story, Filters = the edition you're reading.</p>
+      </section>
+
+      <section class="follow-up" aria-labelledby="follow-title">
+        <h2 class="block-title" id="follow-title">Follow-Up Question</h2>
+        <p><em>Now that you can summarize by Region and Category, how would you show the percentage each region contributes to total revenue? (Hint: explore "Show Values As" in the Value Field Settings.)</em></p>
+      </section>
+    </article>
+
+    <aside class="lesson-sidebar">
+      <section class="difficulty-card" aria-labelledby="difficulty-title">
+        <h2 id="difficulty-title">Session Snapshot</h2>
+        <div class="stat-row">
+          <div class="stat-box"><span>Estimated time</span><strong>45 minutes</strong></div>
+          <div class="stat-box"><span>Difficulty</span><strong>Intermediate</strong></div>
+        </div>
+      </section>
+
+      <section class="downloads" aria-labelledby="downloads-title">
+        <h2 id="downloads-title">Downloads</h2>
+        <p>Practice the exact workflow with the placeholder workbook and the reusable CSV source file.</p>
+        <a class="btn-download" href="assets/workbooks/pivot-tables-practice.xlsx" download aria-label="Download PivotTables practice workbook (Excel .xlsx)">
+          <img src="assets/svg/icon-download.svg" alt="Download icon">
+          <span>Download PivotTables Workbook</span>
+        </a>
+      </section>
+
+      <section class="quiz" aria-labelledby="quiz-title">
+        <h2 id="quiz-title">Check Your Understanding</h2>
+        <p class="quiz-status">0 of 5 answered</p>
+
+        <section class="quiz-question" id="pivot-q1" role="radiogroup" aria-labelledby="pivot-q1-label">
+          <h3 id="pivot-q1-label">Q1. What must be true about your data before creating a PivotTable?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Sorting is not required; PivotTables summarize unsorted data just fine.">A) It must be sorted alphabetically</button>
+            <button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Row 1 should contain field names so Excel can label the PivotTable areas clearly.">B) Row 1 must contain column headers</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="A named Table helps, but it is not required to insert a PivotTable.">C) The data must be in a named Table</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="PivotTables can summarize text, dates, and numbers, not just numeric-only ranges.">D) All cells must contain numbers</button>
+          </div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-question" id="pivot-q2" role="radiogroup" aria-labelledby="pivot-q2-label">
+          <h3 id="pivot-q2-label">Q2. Where is the PivotTable inserted by default?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="You can choose an existing sheet, but that is not the default option.">A) In the current worksheet</button>
+            <button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Excel defaults to a new worksheet so your source data remains separate.">B) In a new worksheet</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="PivotTables are inserted inside the current workbook by default, not a brand-new workbook.">C) In a new workbook</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="PivotTables do not appear beside the source range unless you deliberately change the location.">D) Next to the source data</button>
+          </div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-question" id="pivot-q3" role="radiogroup" aria-labelledby="pivot-q3-label">
+          <h3 id="pivot-q3-label">Q3. Which PivotTable area should <code>Year</code> go in if you want a dropdown to filter all data?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Rows groups the field down the left side instead of creating a report filter.">A) Rows</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Columns creates horizontal headings, not a report-level dropdown.">B) Columns</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Values summarizes numbers; it does not create the filter control you need here.">C) Values</button>
+            <button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. The Filters area creates a report filter above the PivotTable.">D) Filters</button>
+          </div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-question" id="pivot-q4" role="radiogroup" aria-labelledby="pivot-q4-label">
+          <h3 id="pivot-q4-label">Q4. After adding new rows to your source data, what must you do to see them in the PivotTable?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Rebuilding the PivotTable is unnecessary for ordinary source updates.">A) Delete and recreate the PivotTable</button>
+            <button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Refresh tells Excel to re-read the source data without discarding your layout.">B) Right-click and choose Refresh</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Saving and reopening may reload the file, but it is not the required PivotTable action.">C) Save and reopen the file</button>
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="You do not need to drag the fields again after every source update.">D) Drag the fields again</button>
+          </div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-question" id="pivot-q5" role="radiogroup" aria-labelledby="pivot-q5-label">
+          <h3 id="pivot-q5-label">Q5. PivotTables modify the original source data.</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false" data-feedback="Incorrect. This is the major misconception; PivotTables do not write back into the original dataset.">A) True</button>
+            <button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. PivotTables are read-only summary views built from the source range.">B) False</button>
+          </div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </section>
+
+        <p class="quiz-summary" hidden></p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Built for MO-201 Exam Prep</p>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

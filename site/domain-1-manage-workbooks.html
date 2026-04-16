@@ -1,0 +1,70 @@
+<!-- PLACEHOLDER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domain 1 | Manage Workbooks</title>
+  <meta name="description" content="Workbook management skills for Excel Expert prep: macros, external references, version history, protection, and calculation options.">
+  <meta property="og:title" content="Domain 1 | Manage Workbooks">
+  <meta property="og:description" content="Study macro settings, workbook versions, protection, and workbook configuration strategies.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/images/domain-1-thumb-1200.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation"><div class="nav-inner"><a class="nav-brand" href="index.html"><span class="nav-brand-mark">XL</span><span>Excel Expert Learning Site</span></a><div class="nav-links"><a href="index.html">Home</a><a href="domain-2-manage-data-cells.html">Next Domain</a></div></div></nav>
+  <header class="lesson-hero"><div class="page-wrap"><div class="lesson-hero-panel"><div class="breadcrumb"><span class="badge">Domain 1</span><span class="objective-chip">Workbook options and settings</span></div><h1>Manage Workbooks</h1><p><!-- CONTENT: Replace with objective text from Learning Directory row MO-201-1.x -->Focus on workbook-level choices that affect security, sharing, automation, and calculation behavior.</p><div class="lesson-meta"><span class="chip-time">35 minutes</span><span class="chip-difficulty">Intermediate</span><span class="badge">Topics: macros, links, version history, protection</span></div></div></div></header>
+  <main class="lesson-grid">
+    <article class="lesson-content">
+      <section class="hook" aria-labelledby="d1-hook"><h2 class="block-title" id="d1-hook">Real-World Hook</h2><p>You inherited a finance workbook with external links, macros, and protected sheets, and you need to make it safe and usable before anyone else opens it.</p></section>
+      <section class="misconception" aria-labelledby="d1-mis"><h2 class="block-title" id="d1-mis">Common Misconception</h2><p>⚠️ Many learners treat workbook settings as "admin" features, but exam tasks often depend on knowing exactly which setting controls macros, protection, or recalculation.</p></section>
+      <section class="mastery-steps" aria-labelledby="d1-steps"><h2 class="block-title" id="d1-steps">Mastery Steps</h2><ol>
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>1. Copy Macros Between Workbooks</strong></button><div class="step-detail is-open"><p>	1. Select the Developer tab, and then, in the Code group, select Visual Basic. <br>
+          2. If the Project Explorer does not display, select the View tab, and then select Project Explorer. <br>
+          3. In the Project Explorer, right-click the source workbook, and then click Insert &gt; Module. <br>
+          4. In the new module, paste the macro code. <br>
+          5. Save the workbook as a macro-enabled workbook. <br>
+          6. Open the destination workbook, and then, in the Developer tab, in the Code group, select Visual Basic. <br>
+          7. In the Project Explorer, right-click the destination workbook, and then click Insert &gt; Module. <br>
+          8. In the new module, paste the macro code. <br>
+          9. Save the workbook as a macro-enabled workbook. <br>
+        </p><span class="step-meta">Task: Compare <code>.xlsx</code> and <code>.xlsm</code> save options.</span></div></li>
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>2. Reference Data in Other Workbooks</strong></button><div class="step-detail is-open">
+          <p>	1. Open both workbooks (the destination and source workbooks). <br>
+	      2. In the destination workbook, select the cell in which you want to add the reference. <br> 
+	      3. Enter an equal sign (=). <br>
+	      4. Select the source workbook, and then select the cell(s) you want to refer to. <br>
+	      5. Select Enter.  <br> You’ll be automatically returned to the destination workbook. If the data in the source workbook is updated, it will be automatically updated in the destination workbook, too. <br> </p>
+        <span class="step-meta">Task: Practice entering a fully qualified external reference.</span></div></li>
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>3. Enable Macros in a Workbook</strong></button><div class="step-detail is-open"><p>	When you open a workbook with one or more macros, the SECURITY WARNING message bar displays with the Enable Content option. Select Enable Content to enable macros. The following screenshot depicts the SECURITY WARNING message bar with Enable Content highlighted.
+          <img src="assets/images/enable-macros-in-a-workbook.png" alt="Enable Macros in a Workbook"><br>
+          <img src="assets/images/enable-macros-in-a-workbook2.png" alt="Enable Macros in a Workbook">
+ </p><span class="step-meta">Task: Explain which choice blocks sheet insertion versus cell edits.</span></div></li> 
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>4. Manage Workbook Versions</strong></button><div class="step-detail is-open"><p>Use Version History and formula calculation settings when shared workbooks or iterative models behave unexpectedly.</p><span class="step-meta">Task: Identify when manual calculation is safer than automatic recalculation.</span></div></li>
+      </ol></section>
+      <section class="worked-example" aria-labelledby="d1-example"><h2 class="block-title" id="d1-example">Worked Example</h2><p>Use this domain as a checklist lesson. Start by opening a macro-enabled workbook, inspect the Trust Center settings, then note the difference between <em>Protect Workbook</em>, <em>Protect Sheet</em>, and <em>Encrypt with Password</em>.</p><div class="callout"><p>Suggested objectives from the learning directory include copying macros between workbooks, referencing other workbooks, enabling macros, viewing previous versions, restricting editing, protecting structure, and configuring calculation options.</p></div></section>
+      <section class="teacher-tip" aria-labelledby="d1-tip"><h2 class="block-title" id="d1-tip">Teacher Tip</h2><p>💡 Teach workbook settings as decision points: "What are we protecting, what are we automating, and what should happen when formulas recalculate?"</p></section>
+      <section class="follow-up" aria-labelledby="d1-follow"><h2 class="block-title" id="d1-follow">Follow-Up Question</h2><p><em>If a workbook opens with formulas showing outdated results, would you check links, calculation settings, or workbook protection first, and why?</em></p></section>
+    </article>
+    <aside class="lesson-sidebar">
+      <section class="difficulty-card" aria-labelledby="d1-snap"><h2 id="d1-snap">Session Snapshot</h2><div class="stat-row"><div class="stat-box"><span>Estimated time</span><strong>35 minutes</strong></div><div class="stat-box"><span>Difficulty</span><strong>Intermediate</strong></div></div></section>
+      <section class="downloads" aria-labelledby="d1-downloads"><h2 id="d1-downloads">Downloads</h2><p>Use the placeholder workbook for workbook settings, protection, and macro discussion tasks.</p><a class="btn-download" href="assets/workbooks/manage-workbooks-practice.xlsx" download aria-label="Download manage workbooks practice workbook (Excel .xlsx)"><img src="assets/svg/icon-download.svg" alt="Download icon"><span>Download Workbook Practice File</span></a></section>
+      <section class="quiz" aria-labelledby="d1-quiz"><h2 id="d1-quiz">Check Your Understanding</h2><p class="quiz-status">0 of 5 answered</p>
+        <section class="quiz-question" id="d1-q1" role="radiogroup" aria-labelledby="d1-q1-label"><h3 id="d1-q1-label">Q1. Which file type stores VBA macros?</h3><div class="quiz-options"><button class="quiz-option" type="button" data-correct="false" data-feedback="Standard .xlsx files do not retain VBA macros.">A) .xlsx</button><button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Macro-enabled workbooks use the .xlsm file type.">B) .xlsm</button><button class="quiz-option" type="button" data-correct="false" data-feedback=".csv files store plain text data, not workbook macros.">C) .csv</button><button class="quiz-option" type="button" data-correct="false" data-feedback=".txt is a text format, not a macro workbook format.">D) .txt</button></div><p class="quiz-feedback" aria-live="polite"></p></section>
+        <section class="quiz-question" id="d1-q2" role="radiogroup" aria-labelledby="d1-q2-label"><h3 id="d1-q2-label">Q2. Where do you view previous file versions in Microsoft 365?</h3><div class="quiz-options"><button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Version History is available from the File tab's Info area.">A) File &gt; Info &gt; Version History</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Review has protection tools, not version history.">B) Review &gt; Protect Workbook</button><button class="quiz-option" type="button" data-correct="false" data-feedback="The Name Manager is unrelated to versions.">C) Formulas &gt; Name Manager</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Sheet tabs do not show saved cloud versions.">D) Right-click a sheet tab</button></div><p class="quiz-feedback" aria-live="polite"></p></section>
+        <section class="quiz-question" id="d1-q3" role="radiogroup" aria-labelledby="d1-q3-label"><h3 id="d1-q3-label">Q3. Which option protects the workbook structure?</h3><div class="quiz-options"><button class="quiz-option" type="button" data-correct="false" data-feedback="Protect Sheet controls edits inside a sheet, not workbook structure.">A) Protect Sheet</button><button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Protect Workbook can block adding, moving, or deleting sheets.">B) Protect Workbook</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Format Cells changes styling and locking states, not structure protection directly.">C) Format Cells</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Conditional formatting is unrelated.">D) Conditional Formatting</button></div><p class="quiz-feedback" aria-live="polite"></p></section>
+        <section class="quiz-question" id="d1-q4" role="radiogroup" aria-labelledby="d1-q4-label"><h3 id="d1-q4-label">Q4. What does manual calculation primarily change?</h3><div class="quiz-options"><button class="quiz-option" type="button" data-correct="false" data-feedback="It does not remove formulas.">A) It deletes formulas after entry</button><button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. Excel waits to recalculate until you refresh calculation manually.">B) It delays recalculation until you trigger it</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Manual calculation does not encrypt a workbook.">C) It hides formulas from other users</button><button class="quiz-option" type="button" data-correct="false" data-feedback="Workbook opening behavior is separate from calculation mode.">D) It disables version history</button></div><p class="quiz-feedback" aria-live="polite"></p></section>
+        <section class="quiz-question" id="d1-q5" role="radiogroup" aria-labelledby="d1-q5-label"><h3 id="d1-q5-label">Q5. External references point to data in another workbook.</h3><div class="quiz-options"><button class="quiz-option" type="button" data-correct="true" data-feedback="Correct. External references link a formula to cells or ranges in another workbook.">A) True</button><button class="quiz-option" type="button" data-correct="false" data-feedback="False is incorrect here; this is exactly what an external reference does.">B) False</button></div><p class="quiz-feedback" aria-live="polite"></p></section>
+        <p class="quiz-summary" hidden></p>
+      </section>
+    </aside>
+  </main>
+  <footer class="footer"><div class="footer-inner"><p>Built for MO-201 Exam Prep</p><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
