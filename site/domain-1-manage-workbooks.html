@@ -15,12 +15,15 @@
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation"><div class="nav-inner"><a class="nav-brand" href="index.html"><span class="nav-brand-mark">XL</span><span>Excel Expert Learning Site</span></a><div class="nav-links"><a href="index.html">Home</a><a href="domain-2-manage-data-cells.html">Next Domain</a></div></div></nav>
-  <header class="lesson-hero"><div class="page-wrap"><div class="lesson-hero-panel"><div class="breadcrumb"><span class="badge">Domain 1</span><span class="objective-chip">Workbook options and settings</span></div><h1>Manage Workbooks</h1><p><!-- CONTENT: Replace with objective text from Learning Directory row MO-201-1.x -->Focus on workbook-level choices that affect security, sharing, automation, and calculation behavior.</p><div class="lesson-meta"><span class="chip-time">35 minutes</span><span class="chip-difficulty">Intermediate</span><span class="badge">Topics: macros, links, version history, protection</span></div></div></div></header>
+  <header class="lesson-hero"><div class="page-wrap"><div class="lesson-hero-panel"><div class="breadcrumb"><span class="badge">Domain 1</span><span class="objective-chip">Workbook options and settings</span></div><h1>Manage Workbooks</h1><p><!-- CONTENT: Replace with objective text from Learning Directory row MO-201-1.x -->Focus on workbook-level choices that affect security, sharing, automation, and calculation behavior.</p><div class="lesson-meta"><span class="chip-time">35 minutes</span><span class="chip-difficulty">Intermediate</span><span class="badge">Topics: macros, links, version history, collaboration, protection, calculation</span></div></div></div></header>
   <main class="lesson-grid">
     <article class="lesson-content">
       <section class="hook" aria-labelledby="d1-hook"><h2 class="block-title" id="d1-hook">Real-World Hook</h2><p>You inherited a finance workbook with external links, macros, and protected sheets, and you need to make it safe and usable before anyone else opens it.</p></section>
       <section class="misconception" aria-labelledby="d1-mis"><h2 class="block-title" id="d1-mis">Common Misconception</h2><p>⚠️ Many learners treat workbook settings as "admin" features, but exam tasks often depend on knowing exactly which setting controls macros, protection, or recalculation.</p></section>
-      <section class="mastery-steps" aria-labelledby="d1-steps"><h2 class="block-title" id="d1-steps">Mastery Steps</h2><ol>
+      <section class="mastery-steps" aria-labelledby="d1-steps"><h2 class="block-title" id="d1-steps">Mastery Steps</h2>
+        <h3 class="mastery-group-heading">Manage Workbooks</h3>
+        <ol>
+        <!-- OBJECTIVE 1.1.1 -->
         <li><button class="step-toggle" type="button" aria-expanded="true"><strong>1. Copy Macros Between Workbooks</strong></button><div class="step-detail is-open"><p>	1. Select the Developer tab, and then, in the Code group, select Visual Basic. <br>
           2. If the Project Explorer does not display, select the View tab, and then select Project Explorer. <br>
           3. In the Project Explorer, right-click the source workbook, and then click Insert &gt; Module. <br>
@@ -32,6 +35,7 @@
           9. Save the workbook as a macro-enabled workbook. <br>
         </p><span class="step-meta">Task: Compare <code>.xlsx</code> and <code>.xlsm</code> save options.</span></div></li>
 
+        <!-- OBJECTIVE 1.1.2 -->
         <li><button class="step-toggle" type="button" aria-expanded="true"><strong>2. Reference Data in Other Workbooks</strong></button><div class="step-detail is-open">
           <p>	1. Open both workbooks (the destination and source workbooks). <br>
 	      2. In the destination workbook, select the cell in which you want to add the reference. <br> 
@@ -40,13 +44,40 @@
 	      5. Select Enter.  <br> You’ll be automatically returned to the destination workbook. If the data in the source workbook is updated, it will be automatically updated in the destination workbook, too. <br> </p>
         <span class="step-meta">Task: Practice entering a fully qualified external reference.</span></div></li>
 
+        <!-- OBJECTIVE 1.1.3 -->
         <li><button class="step-toggle" type="button" aria-expanded="true"><strong>3. Enable Macros in a Workbook</strong></button><div class="step-detail is-open"><p>	When you open a workbook with one or more macros, the SECURITY WARNING message bar displays with the Enable Content option. Select Enable Content to enable macros. The following screenshot depicts the SECURITY WARNING message bar with Enable Content highlighted.
           <img src="assets/images/enable-macros-in-a-workbook.png" alt="Enable Macros in a Workbook"><br>
           <img src="assets/images/enable-macros-in-a-workbook2.png" alt="Enable Macros in a Workbook">
  </p><span class="step-meta">Task: Explain which choice blocks sheet insertion versus cell edits.</span></div></li> 
 
+        <!-- OBJECTIVE 1.1.4 -->
         <li><button class="step-toggle" type="button" aria-expanded="true"><strong>4. Manage Workbook Versions</strong></button><div class="step-detail is-open"><p>Use Version History and formula calculation settings when shared workbooks or iterative models behave unexpectedly.</p><span class="step-meta">Task: Identify when manual calculation is safer than automatic recalculation.</span></div></li>
-      </ol></section>
+        </ol>
+
+        <h3 class="mastery-group-heading">Prepare Workbooks for collaboration</h3>
+        <ol start="5">
+        <!-- OBJECTIVE 1.2.x collaboration -->
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>5. Restrict editing</strong></button><div class="step-detail is-open"><p><strong>Objective:</strong> Limit who can change the workbook and what they can change—before sharing or co-authoring.</p><p>1. Open <strong>File</strong> &gt; <strong>Info</strong> &gt; <strong>Protect Workbook</strong>. Choose options such as <strong>Always Open Read-Only</strong>, <strong>Encrypt with Password</strong>, or <strong>Mark as Final</strong> to discourage or block changes at the file level.<br>
+2. On the <strong>Review</strong> tab, use <strong>Protect Sheet</strong> or <strong>Protect Workbook</strong> to enforce editing limits inside Excel (see the next two objectives for sheet/range and structure detail).<br>
+3. If your organization uses information protection, look for <strong>Restrict Access</strong> or sensitivity labels under <strong>Protect Workbook</strong> to limit editing by permission.<br>
+4. Combine file-level options (read-only, password) with sheet protection so collaborators can edit only where you intend.</p><span class="step-meta">Task: Compare read-only at open with password encryption versus protecting specific sheets.</span></div></li>
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>6. Protect worksheets and cell ranges</strong></button><div class="step-detail is-open"><p><strong>Objective:</strong> Lock most cells while leaving specific cells or ranges editable for collaborators.</p><p>1. Select cells that should stay editable, open <strong>Format Cells</strong> (<strong>Home</strong> &gt; <strong>Format</strong> &gt; <strong>Format Cells</strong> or <strong>Ctrl+1</strong>), and on the <strong>Protection</strong> tab clear <strong>Locked</strong> for those cells.<br>
+2. On the <strong>Review</strong> tab, select <strong>Protect Sheet</strong>. Add an optional password if you want to prevent others from unprotecting the sheet.<br>
+3. Choose which actions users can still perform (for example, select locked cells, format rows) and confirm.<br>
+4. To allow different passwords for separate ranges, use <strong>Allow Users to Edit Ranges</strong> on the <strong>Review</strong> tab before or after protecting the sheet.</p><span class="step-meta">Task: Unlock input cells, lock the rest, then protect the sheet and verify only inputs accept data.</span></div></li>
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>7. Protect workbook structure</strong></button><div class="step-detail is-open"><p><strong>Objective:</strong> Stop users from adding, moving, renaming, or deleting sheets—without necessarily blocking cell edits.</p><p>1. Open the <strong>Review</strong> tab and select <strong>Protect Workbook</strong> &gt; <strong>Protect Workbook Structure</strong>.<br>
+2. (Alternative path) <strong>File</strong> &gt; <strong>Info</strong> &gt; <strong>Protect Workbook</strong> &gt; <strong>Protect Workbook Structure</strong>.<br>
+3. Optionally enter a password so the structure cannot be unprotected without it.<br>
+4. Confirm. Sheet tabs can no longer be rearranged or deleted unless protection is removed.</p><span class="step-meta">Task: Explain the difference between protecting sheet structure and protecting a single worksheet.</span></div></li>
+
+        <li><button class="step-toggle" type="button" aria-expanded="true"><strong>8. Configure formula calculation options</strong></button><div class="step-detail is-open"><p><strong>Objective:</strong> Control when Excel recalculates formulas—important for large models or before sharing a snapshot of results.</p><p>1. Open the <strong>Formulas</strong> tab. In the <strong>Calculation</strong> group, open <strong>Calculation Options</strong> and choose <strong>Automatic</strong>, <strong>Automatic Except for Data Tables</strong>, or <strong>Manual</strong>.<br>
+2. For manual calculation, use <strong>Calculate Now</strong> (entire workbook) or <strong>Calculate Sheet</strong> (active sheet) when you want results refreshed.<br>
+3. For finer control, open <strong>File</strong> &gt; <strong>Options</strong> &gt; <strong>Formulas</strong> and choose calculation mode, workbook calculation settings, and whether to recalculate before save.<br>
+4. Use <strong>File</strong> &gt; <strong>Options</strong> &gt; <strong>Formulas</strong> &gt; <strong>Workbook Calculation</strong> when you need consistent behavior across sessions.</p><span class="step-meta">Task: Set manual calculation, change a cell, and confirm values update only after Calculate Now.</span></div></li>
+        </ol>
+      </section>
       <section class="worked-example" aria-labelledby="d1-example"><h2 class="block-title" id="d1-example">Worked Example</h2><p>Use this domain as a checklist lesson. Start by opening a macro-enabled workbook, inspect the Trust Center settings, then note the difference between <em>Protect Workbook</em>, <em>Protect Sheet</em>, and <em>Encrypt with Password</em>.</p><div class="callout"><p>Suggested objectives from the learning directory include copying macros between workbooks, referencing other workbooks, enabling macros, viewing previous versions, restricting editing, protecting structure, and configuring calculation options.</p></div></section>
       <section class="teacher-tip" aria-labelledby="d1-tip"><h2 class="block-title" id="d1-tip">Teacher Tip</h2><p>💡 Teach workbook settings as decision points: "What are we protecting, what are we automating, and what should happen when formulas recalculate?"</p></section>
       <section class="follow-up" aria-labelledby="d1-follow"><h2 class="block-title" id="d1-follow">Follow-Up Question</h2><p><em>If a workbook opens with formulas showing outdated results, would you check links, calculation settings, or workbook protection first, and why?</em></p></section>
